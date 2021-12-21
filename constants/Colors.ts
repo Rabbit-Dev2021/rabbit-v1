@@ -16,4 +16,8 @@ export default {
     tabIconDefault: '#ccc',
     tabIconSelected: tintColorDark,
   },
+  primaryColor: {
+    rabbit: "#00AF52",
+    background: "#fff",
+  }
 };
