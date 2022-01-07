@@ -19,5 +19,7 @@ export default {
   primaryColor: {
     rabbit: "#00AF52",
     background: "#fff",
+    textDark2: "#335442",
+    grayBackGround: "#E4E9E6"
   }
 };
