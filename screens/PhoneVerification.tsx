@@ -8,6 +8,8 @@ import {Input, Item, } from "native-base"
 // import Picker from "native-base"
 import { Feather } from '@expo/vector-icons';
 
+import { BottomTabNavigationOptions } from '@react-navigation/bottom-tabs';
+
 import { Text, View } from '../components/Themed';
 import Colors from '../constants/Colors';
 import Button from '../components/Button';
@@ -64,7 +66,7 @@ export default function Login({ navigation}: {navigation: any}) {
         </View>
           <Text style={{color: Colors.primaryColor.rabbit, textAlign: "center", margin: 5}}>Resend OTP? </Text>
           <View style={styles.buttonWrapper}> 
-        	<Button text="Proceed" handleSubmit={() => navigation.navigate("TabOne")}/>
+        	<Button text="Proceed" handleSubmit={() => navigation.navigate("Root")}/>
           </View>
        
         </View>

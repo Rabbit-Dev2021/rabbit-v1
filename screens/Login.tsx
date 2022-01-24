@@ -25,9 +25,9 @@ export default function Login({ navigation}: {navigation: any}) {
         <Text style={{position: "absolute", top: 100, left: 10, fontSize: 18, color: "#fff"}}>Login to your account</Text>
         <View style={{position: "absolute", top: height/4, width: width/1.05}}> 
         <View> 
-        <Input style={styles.input}  keyboardType="default" placeholder="Email" />
+        <Input style={styles.input}  keyboardType="default" placeholderTextColor={Colors.primaryColor.textDark2} placeholder="Email" />
         <Item style={styles.input}> 
-        <Input  keyboardType="default" placeholder="Password" />
+        <Input  keyboardType="default" placeholderTextColor={Colors.primaryColor.textDark2}placeholder="Password" />
         </Item>
 
         </View>

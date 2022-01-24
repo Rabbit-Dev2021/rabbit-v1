@@ -22,19 +22,22 @@ export default function ModalScreen({navigation}:any) {
       key: 1,
       title: "Convenience at one click",
       text: "Easily schedule trips at your own convenience, get picked up at your selected bus stop, and dropped off at your destination. No queues, no hassles, always on schedule.",
-      image: require("../assets/images/Intro1.png")
+      image: require("../assets/images/Intro1.png"),
+      button: false
     },
     {
       key: 2,
       title: "Comfortable and Reliable Commute ",
       text: "With our fixed route-fixed bus fare principle, everyone gets a clean spacious Air-conditioned bus equipped with modern conveniences right On-Time, and always knowing how much a trip costs, No surprise!",
-      image: require("../assets/images/Intro2.png")
+      image: require("../assets/images/Intro2.png"),
+      button: false
     },
     {
       key: 3,
       title: "Experience Better Delivery ",
       text: "Discover a completely convenient way to send packages within your city, with door-2-door package pick-up and drop-off at a cheap fixed price",
-      image: require("../assets/images/Intro3.png")
+      image: require("../assets/images/Intro3.png"),
+      button: true,
     },
   ]
 
@@ -64,13 +67,13 @@ export default function ModalScreen({navigation}:any) {
         left: 0,
         backgroundColor: "#fff", height: _height/2, zIndex: 100, borderTopLeftRadius: 100, display: 'flex', justifyContent: 'space-around', alignItems: "center" }}> 
         <Text style={{fontWeight: "bold"}}>{item.title}</Text>
-        <Text style={{textAlign: "center", width: "80%"}}>{item.text}</Text>
-        <TouchableOpacity 
+        <Text style={{textAlign: "center", width: "80%", marginTop: -80, color: Colors.primaryColor.textDark2}}>{item.text}</Text>
+       {item.button && <TouchableOpacity 
         onPress={() => navigation.navigate("SignUp")}
         
         style={{backgroundColor: Colors.primaryColor.rabbit, padding: 15, width: "90%", borderRadius: 25, marginBottom: 20}}>
         <Text style={{textAlign: "center", color:  Colors.light.background,}}>Get Started</Text>
-        </TouchableOpacity>
+        </TouchableOpacity>}
       </View>
      
           {/* Use a light status bar on iOS to account for the black space above the modal */}
